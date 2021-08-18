@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @azsaf
+- 👋 Hi, I’m @azsafarchi
 - 👀 I’m interested in metagenomis and omics analysis 
 - 🌱 I’m currently learning R and python
 - 💞️ I’m looking to collaborate on metagenome projects or bacterial whole genome sequencing
