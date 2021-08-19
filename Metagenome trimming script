@@ -1,0 +1,14 @@
+#To trimm metagenome files using fastp (https://github.com/OpenGene/fastp)
+fastp --detect_adapter_for_pe --overrepresentation_analysis --correction --cut_mean_quality=20 --cut_window_size=4 --html sample.fastp.html --json sample.fastp.json -i sample_R1.fastq.gz -o sample_trimmed_R1.fastq -I sample_R2_001.fastq.gz -O sample_trimmed_R2.fastq
+when
+-i                    input data (forward direction) 
+-o                    outputdata (forward direction)
+-I                    input data (Reverse direction) 
+-O                    outputdata (Reverse direction)
+--html                output report in html format
+--json                output report in json
+-- correction         enable base correction in overlapped regions (only for PE data), default is disabled
+--cut_mean_quality    the mean quality requirement option shared by cut_front, cut_tail or cut_sliding. Range: 1~36 default: 20 (Q20) (int [=20])
+--cut_window_size     the window size option shared by cut_front, cut_tail or cut_sliding. Range: 1~1000, default: 4 (int [=4])
+--overrepresentation_analysis    enable overrepresented sequence analysis
+--detect_adapter_for_pe          by default, the adapter sequence auto-detection is enabled for SE data only, turn on this option to enable it for PE data
